@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
+      - name: Install zip
+        run: sudo apt install -y zip
       - name: Check out code
         uses: actions/checkout@v2
       - name: Set up Python
