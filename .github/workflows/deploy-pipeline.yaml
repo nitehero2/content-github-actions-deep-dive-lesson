@@ -47,7 +47,7 @@ jobs:
 
   publish:
     runs-on: self-hosted
-    used: actions/create-release@v1
+    uses: actions/create-release@v1
     env:
       GITHUB_TOKEN: ${{ secrets.github_token }}
     with:
